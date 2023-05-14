@@ -16,6 +16,7 @@ def playerInput(board):
         board[inp-1]=currentplayer
     else:
         print("Not possible to mark")
+        playerInput(board)
         
 def checkhorizontal(board):
     global winner,a
